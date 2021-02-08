@@ -1,0 +1,45 @@
+mixin FooterList(...items)
+  each item in items
+    li.lh-lg
+      a.text-light.fs--1.text-decoration-none(href='#!')
+        =item
+
+mixin PreFooter
+  +Section.py-2
+    .row 
+      .col-12
+        .text-center
+          p.mb-0 &copy; This template is made with&nbsp;
+            svg.bi.bi-suit-heart-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#458FF6' viewBox='0 0 16 16')
+              path(d='M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z')
+
+            |&nbsp;by&nbsp;
+            a(href='https://themewagon.com/' target='_blank').text-black ThemeWagon 
+            
+mixin Footer
+  section.py-6.pt-7.bg-primary-gradient
+    +Background({ image: `${CWD}assets/img/illustrations/dot.png`, attrs: { style: { 'background-position': 'left bottom', 'background-size': 'auto','filter':'contrast(1.5)'} }, className: '' })  
+    +Background({ image: `${CWD}assets/img/illustrations/dot-2.png`, attrs: { style: { 'background-position': 'right top', 'background-size': 'auto','margin-top':'-75px'} }, className: '' })  
+    .container
+      .row
+        .col-12.col-lg-4.order-0.order-sm-0.pe-6
+          a(href='#').text-decoration-none
+            img.img-fluid.me-2(src=`${CWD}assets/img/icons/footer-logo.png` alt='' )
+            span.fw-bold.fs-1.text-light Trafalgar
+          p.mt-3.text-white Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+
+        .col-4.col-md-4.col-lg.mb-3.order-2.order-sm-1
+          h6.lh-lg.fw-bold.text-light Company
+          ul.list-unstyled.mb-md-4.mb-lg-0
+            +FooterList('About','Testimonials','Find a doctor','Apps')
+
+        .col-4.col-md-4.col-lg.mb-3.order-3.order-sm-2
+          h6.lh-lg.fw-bold.text-light  Region 
+          ul.list-unstyled.mb-md-4.mb-lg-0
+            +FooterList('Indonesia','Singapore','Guide','Hongkong','Canada')
+            
+        .col-4.col-md-4.col-lg.mb-3.order-1.order-sm-3
+          h6.lh-lg.fw-bold.text-light Help 
+          ul.list-unstyled.mb-md-4.mb-lg-0
+            +FooterList('Help center','Contact support','Guide','Instructions','How it works')
+  +PreFooter         

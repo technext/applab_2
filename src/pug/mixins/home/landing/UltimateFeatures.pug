@@ -1,0 +1,51 @@
+append variables
+ -
+    var features = [
+      {
+        image:'app.png',
+        title:'App Development',
+        text:'Get your blood tests delivered at home collect a sample from the news your blood tests.'
+      },
+      {
+        image:'ux.png', 
+        title:'UX Planning',
+        text:'Get your blood tests delivered at home collect a sample from the news your blood tests.'
+      },
+      {
+        image:'cloud.png',
+        title:'Cloud Storage',
+        text:'Get your blood tests delivered at home collect a sample from the news your blood tests.'
+      },
+      {
+        image:'support.png',
+        title:'Customer support',
+        text:'Get your blood tests delivered at home collect a sample from the news your blood tests.'
+      },
+     
+      ]
+
+mixin UltimateFeature(config)
+  .col-md-6
+    .mb-4
+      .py-4
+        img.img-fluid(src=`${CWD}assets/img/illustrations/${config.image}` width="90"  alt='')
+      h5(class=`text-${config.color}`)=config.title
+      p.mt-2.mb-0=config.text
+
+mixin UltimateFeatures
+  section.py-0 
+    +Background({ image: `${CWD}assets/img/illustrations/ultimate-bg.png`, attrs: { style: { 'background-position': 'right center', 'background-size': 'contain',} }, className: '' }) 
+    .container
+      .row.align-items-center.vh-75
+        .col-md-5.col-lg-5.order-md-1.text-center.text-md-start
+          img.img-fluid.mb-4(src=`${CWD}assets/img/illustrations/ultimate-phone.png`   alt='')
+        .col-md-6.text-center.text-md-start
+          h6.fw-bold.fs-3.display-3.lh-sm Ultimate features
+            br
+            | that we built
+          p.my-4.pe-xl-5  The rise of mobile devices transforms the way we consume information entirely.
+          .row
+            each feature in features 
+              +UltimateFeature(feature)
+          a.btn.btn-lg.btn-primary.rounded-pill.hover-top(href='#' role='button')
+              | See all
