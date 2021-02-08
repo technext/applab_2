@@ -1,6 +1,6 @@
 append variables
  -
-    var features = [
+    var smartfeatures = [
       {
         image:'automatic.png',
         title:'Fast performance',
@@ -39,5 +39,5 @@ mixin SmartFeatures
         .col-md-5.offset-md-1.border-start.py-5.ps-5
           p.mb-0 The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
       .row 
-        each feature in features
+        each feature in smartfeatures
           +SmartFeature(feature)
