@@ -29,16 +29,15 @@ mixin UltimateFeature(config)
     .mb-4
       .py-4
         img.img-fluid(src=`${CWD}assets/img/illustrations/${config.image}` width="90"  alt='')
-      h5(class=`text-${config.color}`)=config.title
+      h5.fw-bold(class=`text-${config.color}`)=config.title
       p.mt-2.mb-0=config.text
 
 mixin UltimateFeatures
-  section.py-0 
-    +Background({ image: `${CWD}assets/img/illustrations/ultimate-bg.png`, attrs: { style: { 'background-position': 'right center', 'background-size': 'contain',} }, className: '' }) 
+  +Section.py-6
     .container
-      .row.align-items-center.vh-75
+      .row.align-items-center
         .col-md-5.col-lg-5.order-md-1.text-center.text-md-start
-          img.img-fluid.mb-4(src=`${CWD}assets/img/illustrations/ultimate-phone.png`   alt='')
+          img.img-fluid.mb-4(src=`${CWD}assets/img/illustrations/ultimate-feature.png`   alt='')
         .col-md-6.text-center.text-md-start
           h6.fw-bold.fs-3.display-3.lh-sm Ultimate features
             br

@@ -39,7 +39,7 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
-$gray-100:#F5F5F6  !default;
+$gray-100:#F5F7FA  !default;
 $gray-200: #EBEBED !default;
 $gray-300: #E1E0E4 !default;
 $gray-400: #D7D6DA !default;
@@ -416,6 +416,7 @@ $hr-opacity: 1 !default;
 //-----------------------------------------------*/
 $card-border-width:                 2px !default;
 $card-border-radius:                0.625rem !default;
+$card-cap-bg:                        tint-color($gray-500, 90%) !default;
 
 
 //*-----------------------------------------------
@@ -423,7 +424,7 @@ $card-border-radius:                0.625rem !default;
 //-----------------------------------------------*/
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color:             $primary !default;
+$carousel-control-color:             $light !default;
 
 $carousel-indicator-active-bg:       $primary !default;
 $carousel-indicator-width:           9px !default;
@@ -431,7 +432,26 @@ $carousel-indicator-height:          9px !default;
 $carousel-indicator-hit-area-height : 0 !default;
 
 
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") !default;
 
 
+// Accordion
+$accordion-padding-y:                     1.5rem !default;
+$accordion-padding-x:                     2.6rem !default;
+$accordion-bg:                            $gray-100 !default;
+$accordion-border-width:                  $border-width !default;
+$accordion-border-color:                  rgba($white, .125) !default;
+$accordion-border-radius:                 0 !default;
+
+$accordion-button-active-bg:              $gray-100 !default;
+$accordion-button-active-color:           $dark !default;
+
+$accordion-button-focus-border-color:     $white !default;
+$accordion-button-focus-box-shadow:       $light !default;
+
+$accordion-icon-width:                    1.8rem !default;
+$accordion-icon-active-color:             $dark !default;
+
+$accordion-button-icon:         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !default;
+$accordion-button-active-icon:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E") !default;

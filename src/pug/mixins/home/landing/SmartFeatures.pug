@@ -27,7 +27,7 @@ mixin SmartFeature(config)
     .mb-4
       .py-4
         img.img-fluid(src=`${CWD}assets/img/illustrations/${config.image}` width="90"  alt='')
-      h5(class=`text-${config.color}`)=config.title
+      h5.fw-bold(class=`text-${config.color}`)=config.title
       p.mt-2.mb-0=config.text
 
 mixin SmartFeatures

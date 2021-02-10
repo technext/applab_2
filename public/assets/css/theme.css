@@ -4394,7 +4394,7 @@ fieldset:disabled .btn {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #474d5b;
   text-decoration: none;
-  background-color: #F5F5F6;
+  background-color: #F5F7FA;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -5177,7 +5177,7 @@ fieldset:disabled .btn {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #fafafa;
   border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -5187,7 +5187,7 @@ fieldset:disabled .btn {
 
 .card-footer {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #fafafa;
   border-top: 2px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -5642,7 +5642,7 @@ fieldset:disabled .btn {
   z-index: 1;
   color: #7D7987;
   text-decoration: none;
-  background-color: #F5F5F6;
+  background-color: #F5F7FA;
 }
 
 .list-group-item-action:active {
@@ -6844,7 +6844,7 @@ fieldset:disabled .btn {
   -ms-flex-pack: center;
   justify-content: center;
   width: 15%;
-  color: #2500F9;
+  color: #E2EAED;
   text-align: center;
   opacity: 0.9;
   -webkit-transition: opacity 0.15s ease;
@@ -6864,7 +6864,7 @@ fieldset:disabled .btn {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #2500F9;
+  color: #E2EAED;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6897,11 +6897,11 @@ fieldset:disabled .btn {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%232500F9' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23E2EAED' class='bi bi-arrow-left-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%232500F9' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23E2EAED' class='bi bi-arrow-right-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-indicators {
@@ -7071,11 +7071,11 @@ fieldset:disabled .btn {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 2.6rem;
   font-size: 1rem;
   color: #616368;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #F5F7FA;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 0;
   overflow-anchor: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
@@ -7098,12 +7098,12 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #2100e0;
-  background-color: #e9e6fe;
+  color: #1F1534;
+  background-color: #F5F7FA;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232100e0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -7112,13 +7112,13 @@ fieldset:disabled .btn {
 .accordion-button::after {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.8rem;
+  height: 1.8rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23616368'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-size: 1.25rem;
+  background-size: 1.8rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   -o-transition: transform 0.2s ease-in-out;
@@ -7140,10 +7140,10 @@ fieldset:disabled .btn {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #9280fc;
+  border-color: #fff;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(37, 0, 249, 0.25);
-  box-shadow: 0 0 0 0.25rem rgba(37, 0, 249, 0.25);
+  -webkit-box-shadow: #E2EAED;
+  box-shadow: #E2EAED;
 }
 
 .accordion-header {
@@ -7151,29 +7151,29 @@ fieldset:disabled .btn {
 }
 
 .accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
   border-bottom-width: 1px;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .accordion-item:last-of-type .accordion-collapse {
   border-bottom-width: 1px;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .accordion-collapse {
-  border: solid rgba(0, 0, 0, 0.125);
+  border: solid rgba(255, 255, 255, 0.125);
   border-width: 0 1px;
 }
 
 .accordion-body {
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 2.6rem;
 }
 
 .accordion-flush .accordion-button {
@@ -7673,7 +7673,7 @@ fieldset:disabled .btn {
 }
 
 .border-100 {
-  border-color: #F5F5F6 !important;
+  border-color: #F5F7FA !important;
 }
 
 .border-200 {
@@ -9461,7 +9461,7 @@ fieldset:disabled .btn {
 }
 
 .bg-100 {
-  background-color: #F5F5F6 !important;
+  background-color: #F5F7FA !important;
 }
 
 .bg-200 {
@@ -9761,7 +9761,7 @@ fieldset:disabled .btn {
 }
 
 .text-100 {
-  color: #F5F5F6 !important;
+  color: #F5F7FA !important;
 }
 
 .text-200 {
@@ -17413,11 +17413,11 @@ label {
 }
 
 .link-100 {
-  color: #F5F5F6 !important;
+  color: #F5F7FA !important;
 }
 
 .link-100:hover, .link-100:focus {
-  color: #cdcdd2 !important;
+  color: #c2cee1 !important;
 }
 
 .link-200 {
@@ -17732,6 +17732,12 @@ label {
   color: #2500F9;
 }
 
+.card-price {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  text-align: center;
+}
+
 /*-----------------------------------------------
 |   LaslesVPN glow buttons
 -----------------------------------------------*/
@@ -17900,7 +17906,7 @@ label {
   -ms-flex-pack: center;
   justify-content: center;
   width: 15%;
-  color: #2500F9;
+  color: #E2EAED;
   text-align: center;
   opacity: 0.9;
   -webkit-transition: opacity 0.15s ease;
@@ -17920,7 +17926,7 @@ label {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #2500F9;
+  color: #E2EAED;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -17956,15 +17962,6 @@ label {
 .carousel-control-prev {
   left: auto;
   right: 45px;
-}
-
-.carousel-control-next {
-  right: auto;
-  left: 45px;
-}
-
-.card {
-  border: 0;
 }
 
 /*-----------------------------------------------

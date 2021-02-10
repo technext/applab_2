@@ -27,7 +27,7 @@ mixin Feature(config)
     div
       img.img-fluid(src=`${CWD}assets/img/illustrations/${config.image}` width="90"  alt='')
     .px-4
-      h5(class=`text-${config.color}`)=config.title
+      h5.fw-bold(class=`text-${config.color}`)=config.title
       p!=config.text
       
 mixin AwesomeFeatures
