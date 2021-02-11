@@ -17715,6 +17715,11 @@ label {
   text-align: center;
 }
 
+.backdrop {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
 /*-----------------------------------------------
 |   LaslesVPN glow buttons
 -----------------------------------------------*/
@@ -17939,6 +17944,16 @@ label {
 .carousel-control-prev {
   right: auto;
   left: 45px;
+}
+
+.cta-image {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .cta-image {
+    margin-bottom: -7.7rem;
+  }
 }
 
 /*-----------------------------------------------

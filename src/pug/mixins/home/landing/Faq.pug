@@ -33,15 +33,15 @@ mixin Faq(config, index)
   .accordion-item.mb-2
     h2(id=`heading${config.id}`).accordion-header
       button.accordion-button(type='button' data-bs-toggle='collapse'  class=index == 0 ? false : 'collapsed'  data-bs-target=`#collapse${config.id}` aria-expanded='true' aria-controls=`collapse${config.id}`)
-        .mb-0.fw-bold.text-start.fs-1.text-1000=config.title
+        span.mb-0.fw-bold.text-start.fs-1.text-1000=config.title
     .accordion-collapse.collapse(id=`collapse${config.id}` class=index == 0 ? 'show' : false  aria-labelledby=`heading${config.id}`  data-bs-parent='#accordionExample')
       .accordion-body.bg-100=config.description
         
 mixin Faqs
-  +Section.py-8
+  +Section.py-8#faq
     .row.justify-content-center
       .col-md-8.col-lg-6.text-center.mb-3
-        h6.fw-bold.fs-3.display-3.lh-sm.mb-3 Get awesome features, without extra charges
+        h6.fw-bold.fs-3.display-3.lh-sm.mb-3 Frequently asked questions
         p.mb-5 The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
 
     .row.flex-center

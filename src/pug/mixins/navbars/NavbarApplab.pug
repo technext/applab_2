@@ -1,5 +1,5 @@
 mixin NavbarApplab
-  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3(data-navbar-on-scroll)
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.backdrop(data-navbar-on-scroll)
     .container
       a.navbar-brand.d-flex.align-items-center.fw-bold.fs-2(href='#') 
         .text-warning App
@@ -12,13 +12,13 @@ mixin NavbarApplab
           li.nav-item
             a.nav-link.fw-medium(aria-current='page', href='#' class= currentPage === 'index' ? 'active' : false ) Home
           li.nav-item
-            a.nav-link.fw-medium(href='#') Key Features
+            a.nav-link.fw-medium(href='#features') Key Features
           li.nav-item
-            a.nav-link.fw-medium(href='#') Pricing
+            a.nav-link.fw-medium(href='#pricing') Pricing
           li.nav-item
             a.nav-link.fw-medium(href='#testimonial') Testimonial
           li.nav-item
-            a.nav-link.fw-medium(href='#about') FAQ
+            a.nav-link.fw-medium(href='#faq') FAQ
           
         form.ps-lg-5
           button.btn.btn-lg.btn-primary.rounded-pill.order-0(type='submit') Try for free

@@ -13,7 +13,7 @@ mixin Testimonial(config)
     h5.my-4.fw-bold.lh-sm User friendly &amp; Customizable
       
     p.mb-0.text-center.text-md-start=config.text
-  .col-xl-6.pt-4
+  .col-xl-6.pt-4.d-flex.d-sm-block.flex-center
     .d-flex.align-items-md-center
       img(src=`${CWD}assets/img/gallery/${config.image}` width="100" alt='').img-fluid.me-4.me-md-3.me-lg-4
       .w-lg-50.my-3
@@ -21,12 +21,12 @@ mixin Testimonial(config)
         p.fw-normal.mb-0=config.designation
 
 mixin Testimonials 
-  section.py-8 
+  section.py-8#testimonial 
     .container-lg
-      .row.align-items-center
-        .col-md-5.col-lg-5.order-md-0.text-center.text-md-start
+      .row.flex-center
+        .col-sm-10.col-md-5.col-lg-5.order-md-0.text-center.text-md-start
           img.img-fluid.mb-4(src=`${CWD}assets/img/illustrations/testimonial.png`  alt='')
-        .col-md-6.col-lg-6.text-center.text-md-start.offset-md-1
+        .col-sm-10.col-md-6.col-lg-6.text-center.text-md-start.offset-md-1
           h6.fw-bold.fs-3.display-3.lh-sm  Meet Client Satisfaction 
             br
             |by using product
