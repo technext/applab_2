@@ -1,6 +1,6 @@
 append variables
  -
-    var features = [
+    var afeatures = [
       {
         image:'fast-performance.png',
         title:'Fast performance',
@@ -37,12 +37,12 @@ mixin AwesomeFeatures
         .col-md-5.col-lg-6.order-md-0.text-center.text-md-start
           img.img-fluid(src=`${CWD}assets/img/illustrations/feature-bg.png` width="550"  alt='')
         .col-md-7.col-lg-6.px-sm-5.px-md-0
-          h6.fw-bold.fs-3.display-3.lh-sm Awesome apps 
+          h6.fw-bold.fs-4.display-3.lh-sm Awesome apps 
             br
             |features
           p.my-4 Increase productivity with a simple to-do app. app for 
             br.d-none.d-xl-block
             |managing your personal budgets.
-          each feature in features
+          each feature in afeatures
             +Feature(feature)
 

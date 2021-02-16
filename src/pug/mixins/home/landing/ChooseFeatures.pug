@@ -1,6 +1,6 @@
 append variables
  -
-    var choosefeatures = [
+    var cfeatures = [
       {
         image:'app.png',
         title:'App Development',
@@ -44,10 +44,10 @@ mixin ChooseFeatures
   +Section.py-6
     .row.justify-content-center.mb-6
       .col-lg-6.text-center.mx-auto.mb-3.mb-md-5.mt-4
-        h6.fw-bold.fs-3.display-3.lh-sm Why you should choose 
+        h6.fw-bold.fs-4.display-3.lh-sm Why you should choose 
           br
           | our app 
         p.mb-0 The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
     .row 
-      each feature in choosefeatures 
+      each feature in cfeatures 
         +ChooseFeature(feature )    
