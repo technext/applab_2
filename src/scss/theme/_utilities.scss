@@ -21,6 +21,7 @@ $utilities: map_merge(
     ),
     "text": (
       property: color,
+      responsive: true,
       class: text,
       values: map_merge($brand-colors, $grays),
     ),
@@ -40,7 +41,7 @@ $utilities: map_merge(
       ),
     ),
     "font-size": (
-      rfs: true,
+      rfs: false,
       property: font-size,
       class: fs,
       responsive: true,
@@ -224,7 +225,7 @@ $utilities: map_merge(
     ),
     "rounded-top": (
       responsive: true,
-      property: border-top-left-radius border-top-right-radius,
+      property: border-top-start-radius border-top-end-radius,
       class: rounded,
       values: (
         top: $border-radius,
@@ -234,7 +235,7 @@ $utilities: map_merge(
     ),
     "rounded-end": (
       responsive: true,
-      property: border-top-right-radius border-bottom-right-radius,
+      property: border-top-end-radius border-bottom-end-radius,
       class: rounded,
       values: (
         end: $border-radius,
@@ -244,7 +245,7 @@ $utilities: map_merge(
     ),
     "rounded-bottom": (
       responsive: true,
-      property: border-bottom-right-radius border-bottom-left-radius,
+      property: border-bottom-end-radius border-bottom-start-radius,
       class: rounded,
       values: (
         bottom: $border-radius,
@@ -254,7 +255,7 @@ $utilities: map_merge(
     ),
     "rounded-start": (
       responsive: true,
-      property: border-bottom-left-radius border-top-left-radius,
+      property: border-bottom-start-radius border-top-start-radius,
       class: rounded,
       values: (
         start: $border-radius,
