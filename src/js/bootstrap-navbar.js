@@ -25,8 +25,13 @@ const navbarInit = () =>{
   const DataKey = {
     NAVBAR_ON_SCROLL: 'navbar-light-on-scroll'
   };
-  
   const navbar = document.querySelector(Selector.NAVBAR);
+  // responsive nav collapsed
+  navbar.addEventListener('click',(e)=>{
+    if(e.target.classList.contains('nav-link')){
+      navbar.querySelector(Selector.NAVBAR_COLLAPSE).classList.remove('show')
+    }
+  })
   
   if (navbar){
     const windowHeight = window.innerHeight;
@@ -48,6 +53,7 @@ const navbarInit = () =>{
      window.addEventListener(Events.SCROLL, () => {
       const { scrollTop } = html;
       let alpha = (scrollTop / windowHeight) * .15;
+      // Add class on scroll
       navbar.classList.add('backdrop');
       if(alpha === 0){
         navbar.classList.remove('backdrop');

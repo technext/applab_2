@@ -270,7 +270,13 @@ var navbarInit = function navbarInit() {
   var DataKey = {
     NAVBAR_ON_SCROLL: 'navbar-light-on-scroll'
   };
-  var navbar = document.querySelector(Selector.NAVBAR);
+  var navbar = document.querySelector(Selector.NAVBAR); // responsive nav collapsed
+
+  navbar.addEventListener('click', function (e) {
+    if (e.target.classList.contains('nav-link')) {
+      navbar.querySelector(Selector.NAVBAR_COLLAPSE).classList.remove('show');
+    }
+  });
 
   if (navbar) {
     var windowHeight = window.innerHeight;
@@ -294,7 +300,8 @@ var navbarInit = function navbarInit() {
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 0.15;
+      var alpha = scrollTop / windowHeight * 0.15; // Add class on scroll
+
       navbar.classList.add('backdrop');
 
       if (alpha === 0) {
