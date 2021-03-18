@@ -48,6 +48,10 @@ const navbarInit = () =>{
      window.addEventListener(Events.SCROLL, () => {
       const { scrollTop } = html;
       let alpha = (scrollTop / windowHeight) * .15;
+      navbar.classList.add('backdrop');
+      if(alpha === 0){
+        navbar.classList.remove('backdrop');
+      }
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
       navbar.style.backgroundImage = (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? backgroundImage : 'none';
