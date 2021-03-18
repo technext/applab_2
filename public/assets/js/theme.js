@@ -274,7 +274,7 @@ var navbarInit = function navbarInit() {
 
   navbar.addEventListener('click', function (e) {
     if (e.target.classList.contains('nav-link')) {
-      navbar.querySelector(Selector.NAVBAR_COLLAPSE).classList.remove('show');
+      navbar.querySelector(Selector.NAVBAR_TOGGLER).click();
     }
   });
 
