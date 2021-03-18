@@ -295,6 +295,12 @@ var navbarInit = function navbarInit() {
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
       var alpha = scrollTop / windowHeight * 0.15;
+      navbar.classList.add('backdrop');
+
+      if (alpha === 0) {
+        navbar.classList.remove('backdrop');
+      }
+
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
       navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
