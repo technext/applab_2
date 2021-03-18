@@ -28,11 +28,11 @@ const navbarInit = () =>{
   const navbar = document.querySelector(Selector.NAVBAR);
   // responsive nav collapsed
   navbar.addEventListener('click',(e)=>{
-    if(e.target.classList.contains('nav-link')){
-      navbar.querySelector(Selector.NAVBAR_COLLAPSE).classList.remove('show')
+    if(e.target.classList.contains('nav-link') && window.innerWidth < utils.getBreakpoint(navbar)){
+      navbar.querySelector(Selector.NAVBAR_TOGGLER).click()
     }
   })
-  
+
   if (navbar){
     const windowHeight = window.innerHeight;
     const html = document.documentElement;
