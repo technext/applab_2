@@ -17324,6 +17324,7 @@ fieldset:disabled .btn {
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: smooth;
   scroll-padding-top: 6.3125rem;
 }
 

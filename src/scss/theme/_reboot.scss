@@ -7,6 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: smooth;
   scroll-padding-top: $top-nav-height + 2;
 }
 
@@ -55,3 +56,4 @@ label{
   font-weight: $font-weight-medium !important; 
   margin-bottom: map-get($spacers, 2);
 }
+
