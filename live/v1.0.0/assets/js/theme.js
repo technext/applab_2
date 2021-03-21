@@ -345,6 +345,30 @@ var navbarInit = function navbarInit() {
       navbar.style.transition = 'none';
     });
   }
+};
+/* -------------------------------------------------------------------------- */
+
+/*                                Scroll To Top                               */
+
+/* -------------------------------------------------------------------------- */
+
+
+var scrollToTop = function scrollToTop() {
+  document.querySelectorAll('[data-anchor] > a, [data-scroll-to]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var _utils$getData;
+
+      e.preventDefault();
+      var el = e.target;
+      var id = utils.getData(el, 'scroll-to') || el.getAttribute('href');
+      window.scroll({
+        top: (_utils$getData = utils.getData(el, 'offset-top')) !== null && _utils$getData !== void 0 ? _utils$getData : utils.getOffset(document.querySelector(id)).top - 100,
+        left: 0,
+        behavior: 'smooth'
+      });
+      window.location.hash = id;
+    });
+  });
 }; // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
@@ -352,4 +376,5 @@ var navbarInit = function navbarInit() {
 
 docReady(navbarInit);
 docReady(detectorInit);
+docReady(scrollToTop);
 //# sourceMappingURL=theme.js.map
